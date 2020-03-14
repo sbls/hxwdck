@@ -1,0 +1,43 @@
+#include "stdafx.h"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	while(1)
+	{
+	printf("\n请输入利润：\n");
+	float l=0,m=0;
+	scanf("%f",&l);
+	if(l<=100000)
+	{
+		m=l/10;
+		printf("应发放奖金：%f\n",m);
+	}
+	else if(l>100000&&l<200000)
+	{
+		m=0.075*l+2500;
+		printf("应发放奖金：%f\n",m);
+	}
+	else if(l>=200000&&l<400000)
+	{
+		m=0.05*l+7500;
+		printf("应发放奖金：%f\n",m);
+	}
+	else if(l>=400000&&l<600000)
+	{
+		m=0.03*l+15500;
+		printf("应发放奖金：%f\n",m);
+	}
+	else if(l>=600000&&l<1000000)
+	{
+		m=0.015*l+24500;
+		printf("应发放奖金：%f\n",m);
+	}
+	else if(l>=1000000)
+	{
+		m=0.01*l+42500;
+		
+		printf("应发放奖金：%f\n",m);
+	}
+	}
+	
+}
